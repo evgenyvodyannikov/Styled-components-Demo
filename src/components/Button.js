@@ -1,5 +1,15 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
+
+const rotateAnimation = keyframes`
+0%{
+    transform: rotateZ(0deg);
+}
+
+100%{
+    transform: rotateZ(360deg);
+}
+`
 
 const StyledButton = styled.button`
 border: none;
@@ -8,6 +18,9 @@ font-size: 18px;
 cursor: pointer;
 &:focus {
     outline: none;
+}
+&:hover{
+    animation: ${rotateAnimation} 1s infinite linear
 }
 align-self: ${props => props.align || 'stretch'};
 
