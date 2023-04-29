@@ -1,15 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import Title from "./components/Title";
 
 const AppWrapper = styled.div`
 width: 100%;
 min-height: 100vh;
 padding: 2rem;
 background: black;
+color: white;
 `
 
 const App = () => {
-  return <AppWrapper>app</AppWrapper>;
+  return (
+  <AppWrapper>
+    <Title color="green">Test 123456</Title>
+    </AppWrapper>
+  );
 };
 
 export default App;
