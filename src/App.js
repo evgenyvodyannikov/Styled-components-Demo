@@ -19,8 +19,8 @@ const App = () => {
       <Flex justify="center">
         <Title color="violet">Test 123456</Title>
       </Flex>
-      <Flex direction='column'>
-        <Console color="violet" />
+      <Flex direction='column' margin='10px' >
+        <Console color="violet"/>
         <Button color='violet' align='flex-end'>Test</Button>
       </Flex>
     </AppWrapper>
