@@ -21,7 +21,7 @@ const App = () => {
       </Flex>
       <Flex direction='column'>
         <Console color="violet" />
-        <Button outlined color='violet' align='flex-end'>Test</Button>
+        <Button color='violet' align='flex-end'>Test</Button>
       </Flex>
     </AppWrapper>
   );
